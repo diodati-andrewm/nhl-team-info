@@ -1,0 +1,51 @@
+nav {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+    z-index: 999;
+}
+
+li.nav {
+    display: inline-block;
+    padding: 0 3px;
+    color:white;
+}
+
+li.nav:hover {
+    color:white;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color:wheat;
+}
+
+li.nav-right {
+    float: right;
+}
+
+img.nav {
+    max-width: 30px;
+    max-height: 30px;
+    padding-right: 5px;
+}
+
+#stanley {
+    font-weight: bold;
+}
+
+#stanley:hover {
+    color:red;
+    font-weight: bolder;
+}

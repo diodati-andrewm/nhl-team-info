@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo Installing source NPM dependencies...
+      - cd nhl-team-info-backend && npm install
+      - cd ../nhl-team-info-frontend && npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the React code...
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
+  base-directory: './'

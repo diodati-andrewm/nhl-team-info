@@ -1,0 +1,46 @@
+li.team:hover {
+    color:white;
+    cursor: pointer;
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px; /*faux bold to prevent shifting from actual bolding*/
+}
+
+li.team {
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+body {
+    padding-top: 40px;
+    background-color: rgb(44, 44, 48);
+    color:white;
+}
+
+.conferences {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+}
+ 
+h1 {
+    text-align: center;
+}
+
+.team-icon {
+    display: inline-block;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.arrow {
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+    .conferences {
+      flex-direction: column;
+      align-items: center;
+    }
+}

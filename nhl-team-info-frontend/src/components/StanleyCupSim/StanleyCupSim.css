@@ -1,0 +1,34 @@
+.app-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    text-align: center;
+}
+

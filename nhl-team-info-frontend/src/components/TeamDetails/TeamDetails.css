@@ -1,0 +1,60 @@
+body {
+    padding-top: 40px;
+    background-color: rgb(44, 44, 48);
+    color:white;
+}
+
+.content {
+    padding-top: 40px;
+    overflow: auto;
+    
+}
+
+
+.team-logo {
+    max-width: 750px;
+    max-height: 750px;
+}
+
+.team-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.details, .img-area {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .team-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .details, .img-area {
+      width: 100%; 
+    }
+  
+    .img-area {
+      /*max-width: 100%;*/
+      order: -1;
+    }
+}
+
+.back-button {
+    position: fixed;
+    top: 10;
+    margin-top: 10px;
+    max-width: 75px;
+    background-color: wheat;
+    font-weight: bold;
+    border-radius: 5px;
+}
+  
+.back-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}  
